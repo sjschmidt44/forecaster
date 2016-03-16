@@ -1,6 +1,5 @@
 Chameleon==2.24
 cookies==2.2.1
-forecaster==0.0
 funcsigs==0.4
 Jinja2==2.8
 Mako==1.0.3
