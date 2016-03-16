@@ -1,0 +1,13 @@
+{% extends 'base.jinja2' %}
+{% block section %}
+<div class="container" id='hr-temps'>
+  {% for hour in hourly %}
+  <div data-temp="{{ hour.d['temperature'] }}" data-time="{{ hour.time.strftime('%I:%M %p') }}">
+    {{ hour.time.strftime('%a') }} {{ hour.time.strftime("%I:%M %p") }}
+    | <span data-summary="{{ hour.d['summary'] }}"></span> {{ hour.d['summary'] }}
+    | {{ hour.d['temperature']|round|int }}&deg;
+
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

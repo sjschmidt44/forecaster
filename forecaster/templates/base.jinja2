@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="${request.locale_name}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="pyramid web application">
+    <meta name="author" content="Pylons Project">
+    <script src="http://oss.maxcdn.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.datejs.com/build/date.js"></script>
+    <script src="http://oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <title>Forecaster</title>
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="http://oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Reset stylesheet -->
+    <link href="../static/css/reset.css" rel="stylesheet">
+    <!-- Skeleton layout grid framework -->
+    <link href="../static/css/layout.css" rel="stylesheet">
+    <!-- Custom icon fonts for project -->
+    <link href="../static/css/icons.css" rel="stylesheet">
+    <!-- Custom styles for this scaffold -->
+    <link href="../static/css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <main>
+      {% block section %}{% endblock %}
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../static/js/forecast.js"></script>
+    <script src="../static/js/icon.js"></script>
+    <script src="../static/js/format.js"></script>
+  </body>
+</html>
