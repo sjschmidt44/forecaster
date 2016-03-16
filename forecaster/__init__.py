@@ -1,3 +1,5 @@
+import os
+from waitress import serve
 from pyramid.config import Configurator
 
 
@@ -12,3 +14,8 @@ def main(global_config, **settings):
     config.add_route('forecast', '/api_v1')
     config.scan()
     return config.make_wsgi_app()
+
+if __name__ == '__main__':
+    app = main()
+    port = os.environ.get('PORT', 5000)
+    serve(app, host='0.0.0.0', port=port)
