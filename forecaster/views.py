@@ -33,7 +33,7 @@ def api_test(request):
         time=current_time
     )
     hourly = forecast.hourly().data
-    import pdb; pdb.set_trace()
+    # import pdb; pdb.set_trace()
 
     return {'hourly': hourly, 'time': current_time}
 
