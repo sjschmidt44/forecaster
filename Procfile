@@ -1,1 +1,1 @@
-web: python --pythonpath forecaster __init__.py
+web: ./run.py
